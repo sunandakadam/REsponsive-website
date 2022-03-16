@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/setStorage.js"></script>
+</head>
+
+<body style="height: 900px; background-color: cadetblue;">
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-md bg-warning navbar-light" id="navdiv">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">AISSMS</a>
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Student Section</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#student">Add student</a>
+                                <a class="dropdown-item" href="#">Students list</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Departments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- corousel -->
+        <div class="row">
+            <div class="col-12">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                   
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/college1.jpg" alt="college1">
+                            <div class="carousel-caption">
+                                <h3>AISSMS</h3>
+                                <p>Welcome to AISSMS</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/college2.jpg" alt="college2">
+                            <div class="carousel-caption">
+                                <h3>AISSMS</h3>
+                                <p>Welcome to AISSMS</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/college3.jpg" alt="college3">
+                            <div class="carousel-caption">
+                                <h3>AISSMS</h3>
+                                <p>Welcome to AISSMS</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                   
+                </div>
+               
+            </div>
+
+        </div>
+        <!-- about us section -->
+        <div class="row">
+            <div class="col-12" id="about">
+                <img class="img-fluid rounded mx-auto d-block mt-2 mb-2 text-center" src="./images/logo.jpg" alt="AISSMS">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <!-- <h1 class="text-center">AISSMS College</h1> -->
+
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of type
+                            and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                            also the
+                            leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of type
+                            and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                            also the
+                            leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of type
+                            and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                            also the
+                            leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#navdiv"><button class="btn btn-warning"> To Top</button></a>
+        </div>
+        <!-- Add student section -->
+        <div class="row justify-content-center" id="student">
+            <div class="col-lg-6 col-md-6 col-12">
+                <h4 class="text-center mt-1=" style="color: white;">Add new student</h4>
+                <div class="card">
+                    <div class="card-body">
+                        <form action ="./studlist.html" class="was-validated">
+                            <div class="form-group">
+                                <label for="uname">Fullname:</label>
+                                <input type="text" class="form-control" 
+                                id="fullname" 
+                                placeholder="Enter fullname"
+                                name="fullname" required>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="uname">Mobile No:</label>
+                                <input type="text" 
+                                class="form-control" 
+                                id="mobile" 
+                                placeholder="Enter mobile no"
+                                name="mobile" required>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="uname">Address:</label>
+                                <input type="text" 
+                                class="form-control" 
+                                id="address" 
+                                placeholder="Enter address"
+                                name="address" required>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="uname">Branch</label>
+                                <input type="text" 
+                                class="form-control" 
+                                id="branch" 
+                                placeholder="Enter branch"
+                                name="branch" required>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>                           
+                           
+                            <div class="row justify-content-center">
+                                <button type="submit" onclick="saveToLocalStorage()" class="btn btn-primary">Submit</button>
+                            </div>
+                         
+                        </form>
+                    </div>
+                  
+                </div>
+                
+            </div>
+        </div>
+        <a href="#navdiv"><button class="btn btn-warning"> To Top</button></a>
+    </div>
+
+
+
+</body>
+
+</html>

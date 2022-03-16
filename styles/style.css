@@ -1,0 +1,11 @@
+.header{
+    position: fixed;
+   width: 100% !important;
+}
+.navbar{
+    width: 100%;
+}
+.carousel-inner img {
+    width: 100% !important;
+    height: 100% !important;
+  }
